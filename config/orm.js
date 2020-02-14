@@ -89,7 +89,7 @@ var orm = {
     });
   },
 
-  // example:  delete (cats, id, 3) 
+  // example:  delete (burgers, id, 3) 
   delete: function(table, column, value, cb) {
     var queryString = "DELETE FROM " + table;
     queryString += " WHERE " + column + " = " + value ;
@@ -105,5 +105,5 @@ var orm = {
   }
 };
 
-// Export the orm object for the model (cat.js).
+// Export the orm object for the model (burger.js).
 module.exports = orm;
