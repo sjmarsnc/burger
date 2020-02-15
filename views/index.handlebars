@@ -1,50 +1,60 @@
 <div class="jumbotron">
 
-  <img align="center" src="../public/assets/images/amirali-mirhashemian-pucP6jZSyV4-unsplash.jpg">
-  <div class="display-4">
-    Eat-Da-Burger
+  <img class="align-content-center" src="../assets/images/amirali-mirhashemian-pucP6jZSyV4-unsplash.jpg">
+  <div class="display-4 text-center">
+    Eat-Da-Burger!
   </div>
 
 </div>>
 
-<div class="container">
+<div class="container m-5">
   <div class="row">
     <div class="col-4">
       <h3>Burgers on the menu</h3>
-      <ul>
+      <table>
         {{#each burgers}}
         {{#unless devoured}}
         {{> burgers/burger-block devoured=false}}
         {{/unless}}
         {{/each}}
-      </ul>
+      </table>
 
     </div>
 
     <div class="col-2">
-      <!-- for devour buttons -->
+      &nbsp; 
     </div>
 
     <div class="col-4">
       <!-- for devoured burgers -->
-      <ul>
-        {{#each burger}}
+      <h3>Burgers already eaten</h3>
+      <table>
+
+        {{#each burgers}}
         {{#if devoured}}
-      {{> burgers/burger-block devoured=true}}
+        {{> burgers/burger-block devoured=true}}
         {{/if}}
         {{/each}}
-      </ul>
+
+      </table>
     </div>
 
   </div>
 </div>
 
+<p></p>
+<div class="container m-5">
+  <div class="row">
+    <div class="col-6 justify-content-center">
 
+      <form class="create-form">
 
-<form class="create-form">
+        <input type="textarea" name="name" id="newBurger" placeholder="Burger Name"><br>
+        <button class="mt-2 btn btn-outline-dark" type="submit">Submit</button>
 
-    <input type="textarea" name="name">   
-    <button type="submit">Submit</button>
+      </form>
+      <h5>Add new burger to menu</h5>
+    </div>
 
-</form>
-<h5>Add a new Burger</h5>
+  </div>
+</div>

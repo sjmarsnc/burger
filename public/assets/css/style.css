@@ -1,7 +1,25 @@
-li {
+td {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  /* background: mistyrose */
+}
+
+body {
+  background: mistyrose !important;
+}
+
+.btn { 
+  background: #f0f0f0 !important; 
+}
+
+img { 
+  height: 200px; 
+  width: 300px;  
+}
+
+.jumbotron { 
+  background-color: #eae9e7 !important;
+  font-weight: bolder;
 }
 
 .label {
