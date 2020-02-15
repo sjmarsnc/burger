@@ -1,38 +1,60 @@
-<h1>Cats!</h1>
+<div class="jumbotron">
 
-<h2>Cats that are not sleepy!</h2>
-
-<ul>
-  {{#each cats}}
-    {{#unless sleepy}}
-      {{> cats/cat-block sleep=true}}
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>Cats that are sleepy!</h2>
-
-<ul>
-  {{#each cats}}
-    {{#if sleepy}}
-      {{> cats/cat-block sleep=false}}
-    {{/if}}
-  {{/each}}
-</ul>
-
-<h2>Add a Cat</h2>
-<form class="create-form">
-
-  <div class="form-group">
-    <label for="ca">Cat Name:</label>
-    <input type="text" id="ca" name="name">
+  <img class="align-content-center" src="../assets/images/amirali-mirhashemian-pucP6jZSyV4-unsplash.jpg">
+  <div class="display-4 text-center">
+    Eat-Da-Burger!
   </div>
 
-  <div class="form-group">
-    <label for="slee">Sleepy?</label><br>
-    <input type="radio" name="sleepy" value="1" checked> Sleepy!<br>
-    <input type="radio" name="sleepy" value="0"> Awake
-  </div>
+</div>>
 
-  <button type="submit">Add Cat</button>
-</form>
+<div class="container m-5">
+  <div class="row">
+    <div class="col-4">
+      <h3>Burgers on the menu</h3>
+      <table>
+        {{#each burgers}}
+        {{#unless devoured}}
+        {{> burgers/burger-block devoured=false}}
+        {{/unless}}
+        {{/each}}
+      </table>
+
+    </div>
+
+    <div class="col-2">
+      &nbsp; 
+    </div>
+
+    <div class="col-4">
+      <!-- for devoured burgers -->
+      <h3>Burgers already eaten</h3>
+      <table>
+
+        {{#each burgers}}
+        {{#if devoured}}
+        {{> burgers/burger-block devoured=true}}
+        {{/if}}
+        {{/each}}
+
+      </table>
+    </div>
+
+  </div>
+</div>
+
+<p></p>
+<div class="container m-5">
+  <div class="row">
+    <div class="col-6 justify-content-center">
+
+      <form class="create-form">
+
+        <input type="textarea" name="name" id="newBurger" placeholder="Burger Name"><br>
+        <button class="mt-2 btn btn-outline-dark" type="submit">Submit</button>
+
+      </form>
+      <h5>Add new burger to menu</h5>
+    </div>
+
+  </div>
+</div>

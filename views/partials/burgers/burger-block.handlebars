@@ -1,0 +1,9 @@
+<tr>
+	<td>{{id}}. &nbsp; {{name}} </td> 
+     {{#unless devoured }}
+	<td><button class="btn btn-outline-dark change-eaten" data-id="{{id}}" data-eaten="{{devoured}}">
+		 Devour it! 
+	</button>
+	</td>
+	{{/unless}}
+</tr>
