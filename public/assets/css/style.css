@@ -1,7 +1,7 @@
 td {
   padding: 5px;
   margin: 5px;
-  /* background: mistyrose */
+  background: #fafafa;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
 .btn { 
   background: #f0f0f0 !important; 
 }
+
 
 img { 
   height: 200px; 
