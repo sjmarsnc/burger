@@ -7,7 +7,7 @@ See the app at https://damp-fortress-00647.herokuapp.com/
 
 ## Usage 
 
-The general idea is that the user can enter hamburgers they would like to eat.   Hamburgers are shown in the left-hand column on the page with a button that says "Devlour it!". 
+The general idea is that the user can enter hamburgers they would like to eat.   Hamburgers are shown in the left-hand column on the page with a button that says "Devour it!". 
 Once the user has clicked on the button to "devour" the hamburger, it appears in the "Burgers already eaten" column on the right-hand side.  
 
 ## Structure  
